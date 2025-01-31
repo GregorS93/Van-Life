@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 780px;
+    margin: 0 auto;
+    font-family: Inter;
+}

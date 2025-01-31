@@ -1,0 +1,9 @@
+.footer-div {
+    color: #AAAAAA;
+    background: #252525;
+    text-align: center;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
