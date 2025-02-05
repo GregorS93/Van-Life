@@ -1,11 +1,8 @@
 import React from "react"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
 
 export default function About() {
     return (
         <>  
-            <Navbar />
             <section className="about-section">
                 <img className="hero-img-about" src="../pictures/hero-about-page.png" />
                 <div className="content-div">
@@ -21,7 +18,6 @@ export default function About() {
                     </div>
                 </div> 
             </section>
-            <Footer />
         </>
     )
 }

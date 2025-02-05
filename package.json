@@ -1,5 +1,5 @@
 {
-  "name": "Scrim-s041bir",
+  "name": "scrim-s041bir",
   "description": "https://scrimba.com/the-frontend-developer-career-path-c0j/~0121/s0fd706e47/head",
   "scripts": {
     "start": "vite",
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "miragejs": "^0.1.48",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.4.3",
