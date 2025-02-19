@@ -9,22 +9,30 @@
 .navbar-link {
     text-decoration: none;
     color: #4D4D4D;
-}
-
-.vans-link {
     margin-left: 1.7em;
 }
 
-.navbar-link:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+.navbar-link:hover,
+.host-nav-link:hover,
+.host-van-detail-links:hover {
+    font-weight: bold;
 }
 
-.underline {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+/* HOST NAV */
+
+.host-nav-link {
+    margin: 0 0.5em;
+    margin-left: 2em;
+    text-decoration: none;
 }
 
-.no-decoration {
+.navbar-links-div {
+    display: flex;
+    justify-content: center;
+}
+
+/* HOST VAN DETAIL NAV */
+
+.host-van-detail-links {
     text-decoration: none;
 }

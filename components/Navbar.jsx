@@ -1,35 +1,33 @@
-import {useState, useEffect} from "react"
-import {Link, useLocation} from "react-router-dom"
-import clsx from "clsx"
+import { useState, useEffect } from "react"
+import { NavLink } from "react-router-dom"
+import loginIcon from "/pictures/login-icon.png"
+import siteLogo from "/pictures/logo.png"
+
 
 export default function Navbar() {
-    const location = useLocation()
-    const [isFocused, setIsFocused] = useState(true)
+    const activeStyles = {
+        fontWeight: "bold",
+        textDecoration: "underline",
+        textDecorationThickness: "2px"
+    }
 
-    useEffect(() => {
-        const handleFocus = () => setIsFocused(true)
-        const handleBlur = () => setIsFocused(false)
-
-        window.addEventListener('focus', handleFocus)
-        window.addEventListener('blur', handleBlur)
-
-        return () => {
-            window.removeEventListener('focus', handleFocus)
-            window.removeEventListener('blur', handleBlur)
-        }
-    }, [])
-
-    const underLineClassOne = clsx("navbar-link", {"underline": isFocused && location.pathname === "/about"})
-    const underLineClassTwo = clsx("navbar-link", {"underline": isFocused && location.pathname === "/vans"})
+    function fakeLogOut() {
+        localStorage.removeItem("loggedin")
+    }
 
     return ( 
         <div className="navbar" >
-            <Link to="/">
-                <img src="../pictures/logo.png" />
-            </Link>
+            <NavLink to="/">
+                <img src={siteLogo} />
+            </NavLink>
             <div className="navbar-links-div" >
-                <Link to="/about" className={underLineClassOne}>About</Link >   
-                <Link to="/vans" className={`vans-link ${underLineClassTwo}`}>Vans</Link >
+                <NavLink to="/host" className="navbar-link" style={({isActive}) => isActive ? activeStyles : null}>Host</NavLink >   
+                <NavLink to="/about" className="navbar-link" style={({isActive}) => isActive ? activeStyles : null}>About</NavLink >   
+                <NavLink to="/vans" className="navbar-link" style={({isActive}) => isActive ? activeStyles : null}>Vans</NavLink >
+                <NavLink to="login" className="navbar-link" style={({isActive}) => isActive ? activeStyles : null}>
+                    <img className="login-Icon" src={loginIcon} />
+                </NavLink >
+                <button onClick={fakeLogOut}>X</button>
             </div>
         </div>
     )
