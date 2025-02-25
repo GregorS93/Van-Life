@@ -1,10 +1,11 @@
 import React from "react"
+import heroImg from "../pictures/hero-about-page.png"
 
 export default function About() {
     return (
         <>  
             <section className="about-section">
-                <img className="hero-img-about" src="../pictures/hero-about-page.png" />
+                <img className="hero-img-about" src={heroImg} />
                 <div className="content-div">
                     <h2>Dont squeeze in a sedan, when you could relax in a van.</h2>   
                     <p>Our mission is to enliven your road trip with the perfect travel van rental. 

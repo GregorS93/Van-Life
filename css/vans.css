@@ -158,3 +158,12 @@ h3, p {
     border: none;
     border-radius: 7px;
 }
+
+.linksis {
+    text-decoration: none;
+}
+
+.linksis:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}

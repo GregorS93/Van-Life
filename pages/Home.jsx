@@ -1,6 +1,13 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function Home() {
+    const navigate = useNavigate()
+
+    const handleRedirect = () => {
+        navigate("/vans")
+    } 
+
     return  (
         <>
             <div className="hero-div">
@@ -9,7 +16,7 @@ export default function Home() {
                     <p>Add adventure to your life by joining the #vanlife movement.</p>
                     <p>Rent the perfect van to make your perfect roadtrip.</p>
                 </div>
-                <button>Find your van</button>
+                <button onClick={handleRedirect}>Find your van</button>
             </div>
         </>
     )
