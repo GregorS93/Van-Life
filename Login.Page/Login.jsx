@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { loginUser } from "../api.js";
+import { setLoggedInLocal } from "../localStorage/handles.js";
 
 export default function Login() {
   const [loginFormData, setLoginFormData] = useState({
@@ -14,17 +15,21 @@ export default function Login() {
 
   const from = location.state?.from?.pathname || "/host";
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     setStatus("submitting");
-    loginUser(loginFormData)
-      .then((data) => {
-        setError(null);
-        localStorage.setItem("loggedin", true);
-        navigate(from, { replace: true });
-      })
-      .catch((err) => setError(err))
-      .finally(() => setStatus("idle"));
+    try {
+      const data = await loginUser(loginFormData);
+      setError(null);
+      navigate(from, { replace: true });
+      {
+        setLoggedInLocal();
+      }
+    } catch (err) {
+      setError(err);
+    } finally {
+      setStatus("idle");
+    }
   }
 
   function handleChange(e) {

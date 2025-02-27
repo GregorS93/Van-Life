@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link, Outlet, NavLink } from "react-router-dom";
-import { getVan } from "../../api";
+import { getVan } from "../api";
+import { activeStyles } from "../consts/toConsts";
 
 export default function HostVanDetail() {
   const { id } = useParams();
@@ -30,12 +31,6 @@ export default function HostVanDetail() {
   if (error) {
     return <h1>There was an error: {error.message}</h1>;
   }
-
-  const activeStyles = {
-    fontWeight: "bold",
-    color: "#161616",
-    textDecoration: "underline",
-  };
 
   return (
     <div className="van-listed">

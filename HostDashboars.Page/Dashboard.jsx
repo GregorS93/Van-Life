@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
-import { getHostVans } from "../../api";
+import { getHostVans } from "../api";
 import { BsStarFill } from "react-icons/bs";
+import { hostVansPath } from "../consts/toConsts";
 
 export default function Dashboard() {
   const [vans, setVans] = useState([]);
@@ -9,17 +10,22 @@ export default function Dashboard() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setLoading(true);
-    getHostVans()
-      .then((data) => setVans(data))
-      .catch((err) => setError(err))
-      .finally(() => setLoading(false));
+    async function loadVans() {
+      setLoading(true);
+      try {
+        const data = await getHostVans();
+        setVans(data);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadVans();
   }, []);
 
-  const dynamicTo = (id) => `/host/vans/${id}`;
-
   const hostVansEls = vans.map((van) => (
-    <Link key={van.id} to={dynamicTo(van.id)}>
+    <Link key={van.id} to={hostVansPath(van.id)}>
       <div className="host-van-div">
         <img src={van.imageUrl} className="host-van-img" />
         <div className="host-van-detail">
@@ -30,8 +36,12 @@ export default function Dashboard() {
     </Link>
   ));
 
+  if (loading) {
+    return <h1>Loading...</h1>;
+  }
+
   if (error) {
-    return <h1>Error: {error.message}</h1>;
+    return <h1>There was an error: {error.message}</h1>;
   }
 
   return (

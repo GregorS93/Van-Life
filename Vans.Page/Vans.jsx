@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { getVans } from "../../api";
+import { getVans } from "../api";
 
 export default function Vans() {
   const [vans, setVans] = useState([]);
@@ -101,30 +101,6 @@ export default function Vans() {
             {types[typeKey].toLowerCase()}
           </button>
         ))}
-        {/* <button
-          onClick={() => genNewSearPar("type", types.simple)}
-          className={`van-type van-popravek simplest ${
-            typeFilter === "simple" ? "selected" : null
-          }`}
-        >
-          Simple
-        </button>
-        <button
-          onClick={() => genNewSearPar("type", "rugged")}
-          className={`van-type van-popravek ruggedy ${
-            typeFilter === "rugged" ? "selected" : null
-          }`}
-        >
-          Rugged
-        </button>
-        <button
-          onClick={() => genNewSearPar("type", "luxury")}
-          className={`van-type van-popravek luxurious ${
-            typeFilter === "luxury" ? "selected" : null
-          }`}
-        >
-          Luxury
-        </button> */}
         {typeFilter && (
           <button
             onClick={() => genNewSearPar("type", null)}

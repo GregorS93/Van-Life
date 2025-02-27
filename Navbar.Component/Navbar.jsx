@@ -2,14 +2,9 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import loginIcon from "/pictures/login-icon.png";
 import siteLogo from "/pictures/logo.png";
+import { activeStyles } from "../consts/toConsts";
 
 export default function Navbar() {
-  const activeStyles = {
-    fontWeight: "bold",
-    textDecoration: "underline",
-    textDecorationThickness: "2px",
-  };
-
   function fakeLogOut() {
     localStorage.removeItem("loggedin");
   }
