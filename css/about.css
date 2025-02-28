@@ -1,55 +1,55 @@
 .hero-img-about {
-    height: 280px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  height: 280px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .about-section {
-    margin: 0;
+  margin: 0;
 }
 
 .content-div > h2 {
-    color: #161616;
-    font-size: 2.4rem;
-    text-align: left;
-    margin-top: -0.3em;
-    font-weight: 600;
+  color: #161616;
+  font-size: 2.4rem;
+  text-align: left;
+  margin-top: -0.3em;
+  font-weight: 600;
 }
 
 .content-div > p {
-    font-size: 1.2rem;
-    margin-bottom: 2em;
+  font-size: 1.2rem;
+  margin-bottom: 2em;
 }
 
 .content-div {
-    padding: 4em 2em;
+  padding: 4em 2em;
 }
 
 .explore-vans-div {
-    background: #FFCC8D;
-    color: #161616;
-    padding: 2.5em;
-    margin-top: 5em;
-    border-radius: 8px;
+  background: #ffcc8d;
+  color: #161616;
+  padding: 2.5em;
+  margin-top: 5em;
+  border-radius: 8px;
 }
 
 .explore-vans-div > button {
-    background: #161616;
-    color: white;
-    padding: 1em 1.5em;
-    border: none;
-    border-radius: 8px;
-    font-weight: 700;
-    margin-top: 3em;
-    font-size: 1.1em;
+  background: #161616;
+  color: white;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-top: 3em;
+  font-size: 1.1em;
 }
 
 .explore-vans-div > h3 {
-    font-size: 2rem;
-    margin: 0;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .about-page-btn {
-    cursor: pointer;
+  cursor: pointer;
 }

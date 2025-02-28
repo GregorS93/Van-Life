@@ -1,260 +1,259 @@
 /* HOSTS VANS */
 
 .host-van-div {
-    height: 7.5em;
-    width: 100%;
-    display: flex;  
-    align-items: center;
-    gap: 1.5em;
-    background: white;
-    border-radius: 5px;
-    padding-left: 1.5em;
+  height: 7.5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  background: white;
+  border-radius: 5px;
+  padding-left: 1.5em;
 }
 
 .host-van-img {
-    width: 5em;
-    height: 5em;
-    border-radius: 10px;
+  width: 5em;
+  height: 5em;
+  border-radius: 10px;
 }
 
 .host-vans-h1 {
-    margin-top: .7em;
-    padding-top: 1em;
-    padding-left: 1em;
+  margin-top: 0.7em;
+  padding-top: 1em;
+  padding-left: 1em;
 }
 
 .host-vans-container {
-    padding: 1em 2em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: -1em;
-    margin-bottom: 5em;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: -1em;
+  margin-bottom: 5em;
 }
 
 .host-van-detail {
-    color: #161616;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.3em;
+  color: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3em;
 }
 
 .host-van-detail-h {
-    font-size: 1rem;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 0;
-    text-decoration: none;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0;
+  text-decoration: none;
 }
 
 .host-van-detail-p {
-    font-weight: 400;
-    font-size: 0.9rem;
-    margin: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 /* HOST LISTED VANS PAGE */
 
 .van-listed-container {
-    margin: 2em 2em 2em 2em;
-    padding: 2em;
-    background: white;
-    border-radius: 6px;
+  margin: 2em 2em 2em 2em;
+  padding: 2em;
+  background: white;
+  border-radius: 6px;
 }
 
 .van-listed-div {
-    display: flex;
-    gap: 1.5em;
-    
+  display: flex;
+  gap: 1.5em;
 }
 
 .listed-van-img {
-    height: 10em;
-    width: 10em;
-    border-radius: 6px;
+  height: 10em;
+  width: 10em;
+  border-radius: 6px;
 }
 
 .van-listed-detail {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.3rem;
-    justify-content: center;
-    gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  justify-content: center;
+  gap: 0.5em;
 }
 
 .van-type-listed {
-    width: 5.1em;
-    color: white;
-    padding: 0.3em 1em;
+  width: 5.1em;
+  color: white;
+  padding: 0.3em 1em;
 }
 
 .van-listed-name {
-    font-weight: bold;
-    font-size: 1.4rem;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .van-listed-price {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .van-listed-price > span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .back-btn {
-    text-decoration: none;
-    padding-left: 2em;
-    color: #201F1D;
+  text-decoration: none;
+  padding-left: 2em;
+  color: #201f1d;
 }
 
 .back-btn > span:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .van-listed {
-    margin-top: 4em;
+  margin-top: 4em;
 }
 
 .host-vans-nav {
-    display: flex;
-    gap: 1.5em;
-    margin-bottom: 0.5em;
-    margin-top: 2em;
-    font-size: 1.1rem;
-    background: white;
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 0.5em;
+  margin-top: 2em;
+  font-size: 1.1rem;
+  background: white;
 }
 
 .listed-van-details {
-    padding: 2em 0 0em 0;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+  padding: 2em 0 0em 0;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .listed-van-details > h3 {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .listed-van-span {
-    font-weight: bold;
-    margin-right: 0.5em;
+  font-weight: bold;
+  margin-right: 0.5em;
 }
 
 .listed-van-pricing {
-    font-weight: bold;
-    font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .listed-van-photos {
-    height: 150px;
-    width: 150px;
-    border-radius: 7px;
+  height: 150px;
+  width: 150px;
+  border-radius: 7px;
 }
 
 /* HOST VANS DASHBOARD PAGE */
 
 .listed-vans-dashboard-div {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .view-all-host-link {
-    text-decoration: none;
-    padding-right: 2em;
-    padding-top: 2.8em;
+  text-decoration: none;
+  padding-right: 2em;
+  padding-top: 2.8em;
 }
 
 .review-section {
-    background: #FFDDB2;
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: #ffddb2;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .review-section > div {
-    display: flex;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
 }
 
 .review-section > div > p {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .review-section > div > p,
 .review-section > div > h2 {
-    margin-block: 1.5em;
+  margin-block: 1.5em;
 }
 
 .review-section > div > p {
-    font-weight: 400;
-    color: #4D4D4D;
+  font-weight: 400;
+  color: #4d4d4d;
 }
 
 .review-section > div > p > span {
-    font-weight: bold;
-    color: #161616;
+  font-weight: bold;
+  color: #161616;
 }
 
 .details-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .details-link:hover,
 .view-all-host-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .earnings-section {
-    margin-top: 3em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em 2em;
-    background: #FFEAD0;
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 2em;
+  background: #ffead0;
 }
 
 .earnings-section > div > h1,
 .earnings-section > div > p,
 .earnings-section > div > h2 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .earnings-section > div {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
 }
 
 .earnings-section > div > h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .earnings-section > div > p {
-    color: #4D4D4D;
-    font-size: 1rem;
+  color: #4d4d4d;
+  font-size: 1rem;
 }
 
 .earnings-section > div > p > span {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .earnings-section > div > h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .star {
-    height: 25px;
-    width: 27px;
-    color: #FF8C38;
-    margin-right: -12px;
+  height: 25px;
+  width: 27px;
+  color: #ff8c38;
+  margin-right: -12px;
 }

@@ -1,38 +1,38 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3em 2em;
-    height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 2em;
+  height: 120px;
 }
 
 .navbar-link {
-    text-decoration: none;
-    color: #4D4D4D;
-    margin-left: 1.7em;
+  text-decoration: none;
+  color: #4d4d4d;
+  margin-left: 1.7em;
 }
 
 .navbar-link:hover,
 .host-nav-link:hover,
 .host-van-detail-links:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* HOST NAV */
 
 .host-nav-link {
-    margin: 0 0.5em;
-    margin-left: 2em;
-    text-decoration: none;
+  margin: 0 0.5em;
+  margin-left: 2em;
+  text-decoration: none;
 }
 
 .navbar-links-div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* HOST VAN DETAIL NAV */
 
 .host-van-detail-links {
-    text-decoration: none;
+  text-decoration: none;
 }
