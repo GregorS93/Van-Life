@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../../assets/pictures/hero-about-page.png";
+import heroImg from "../../assets/About/hero-about-page.png";
 import { useNavigate } from "react-router-dom";
 
 export default function About() {

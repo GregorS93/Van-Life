@@ -1,5 +1,5 @@
 import React from "react";
-import reviewsGraph from "../../assets/pictures/reviews-graph.png";
+import reviewsGraph from "../../../assets/Host-Reviews/reviews-graph.png";
 import { BsStarFill } from "react-icons/bs";
 
 export default function Reviews() {

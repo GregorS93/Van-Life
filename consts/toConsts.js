@@ -1,3 +1,5 @@
+// import { getLoggedInLocal } from "../localStorage/handles";
+
 export const hostVansPath = (id) => `/host/vans/${id}`;
 
 export const activeStyles = {
@@ -6,3 +8,5 @@ export const activeStyles = {
   textDecoration: "underline",
   textDecorationThickness: "2px",
 };
+
+// export const isLoggedIn = getLoggedInLocal();

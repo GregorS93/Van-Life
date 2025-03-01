@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import loginIcon from "../../assets/pictures/login-icon.png";
-import siteLogo from "../../assets/pictures/logo.png";
+import loginIcon from "../../assets/Login/login-icon.png";
+import siteLogo from "../../assets/Home/logo.png";
 import { activeStyles } from "../../consts/toConsts";
+import { deleteLoggedInLocal } from "../../localStorage/handles";
+// import { isLoggedIn } from "../../consts/toConsts";
 
-export default function Navbar() {
-  function fakeLogOut() {
-    localStorage.removeItem("loggedin");
-  }
-
+export default function Navbar({ loginData }) {
   return (
     <div className="navbar">
       <NavLink to="/">
@@ -43,7 +41,15 @@ export default function Navbar() {
         >
           <img className="login-Icon" src={loginIcon} />
         </NavLink>
-        <button onClick={fakeLogOut}>X</button>
+        {
+          <button
+            title="Log out / empty localStorage"
+            className="empty-local-storage"
+            onClick={deleteLoggedInLocal}
+          >
+            X
+          </button>
+        }
       </div>
     </div>
   );

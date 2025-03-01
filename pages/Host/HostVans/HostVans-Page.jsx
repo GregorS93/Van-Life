@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getHostVans } from "../../apis/api";
-import { hostVansPath } from "../../consts/toConsts";
+import { getHostVans } from "../../../apis/api";
+import { hostVansPath } from "../../../consts/toConsts";
 
 export default function HostVans() {
   const [hostVans, setHostVans] = useState([]);

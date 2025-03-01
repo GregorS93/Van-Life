@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link, Outlet, NavLink } from "react-router-dom";
-import { getVan } from "../../apis/api";
-import { activeStyles } from "../../consts/toConsts";
+import { getVan } from "../../../apis/api";
+import { activeStyles } from "../../../consts/toConsts";
 
 export default function HostVanDetail() {
   const { id } = useParams();

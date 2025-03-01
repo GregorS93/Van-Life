@@ -1,5 +1,5 @@
 .hero-div {
-  background: url("/assets/pictures/hero-image.png") center / cover no-repeat;
+  background: url("/assets/Home/hero-image.png") center / cover no-repeat;
   color: white;
   height: 610px;
   text-align: left;
@@ -44,4 +44,20 @@
 .hero-div > button:hover {
   transform: scale(1.07);
   color: #4d4d4d;
+}
+
+.empty-local-storage {
+  margin-left: 1.5em;
+  border: none;
+  cursor: pointer;
+  width: 2em;
+  border-radius: 8px;
+  background: #ff8c38;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.1s ease-in-out;
+} 
+
+.empty-local-storage:active {
+  transform: scale(0.9);
 }

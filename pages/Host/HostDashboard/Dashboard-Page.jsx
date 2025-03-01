@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
-import { getHostVans } from "../../apis/api";
+import { getHostVans } from "../../../apis/api";
 import { BsStarFill } from "react-icons/bs";
-import { hostVansPath } from "../../consts/toConsts";
+import { hostVansPath } from "../../../consts/toConsts";
 
 export default function Dashboard() {
   const [vans, setVans] = useState([]);
@@ -25,7 +25,7 @@ export default function Dashboard() {
   }, []);
 
   const hostVansEls = vans.map((van) => (
-    <Link key={van.id} to={hostVansPath(van.id)}>
+    <Link className="dashboard-link" key={van.id} to={hostVansPath(van.id)}>
       <div className="host-van-div">
         <img src={van.imageUrl} className="host-van-img" />
         <div className="host-van-detail">

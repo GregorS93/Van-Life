@@ -93,6 +93,7 @@ export default function Vans() {
       <div className="filterBtns">
         {Object.keys(types).map((typeKey) => (
           <button
+            key={types[typeKey]}
             onClick={() => genNewSearPar("type", types[typeKey])}
             className={`van-type van-popravek ${types[typeKey]} ${
               typeFilter === types[typeKey] ? "selected" : null
