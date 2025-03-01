@@ -1,5 +1,5 @@
 .hero-div {
-  background: url("../pictures/hero-image.png") center / cover no-repeat;
+  background: url("/assets/pictures/hero-image.png") center / cover no-repeat;
   color: white;
   height: 610px;
   text-align: left;

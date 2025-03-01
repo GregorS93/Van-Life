@@ -94,17 +94,17 @@ p {
   border: none;
 }
 
-.van-type.luxurious.selected {
+.van-type.luxury.selected {
   background: #161616;
   color: #ffead0;
 }
 
-.van-type.ruggedy.selected {
+.van-type.rugged.selected {
   background: #115e59;
   color: #ffead0;
 }
 
-.van-type.simplest.selected {
+.van-type.simple.selected {
   background: #e17654;
   color: #ffead0;
 }
