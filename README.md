@@ -81,7 +81,7 @@ This project follows a modular structure for better organization and maintainabi
   - **host pages**: Separete folder with all views (pages) relating to the user (host)
 - **public**: Stores all static assets that are not processed by the build system
 
-Below is an example folder structure for the "lot" view:
+Below is an example folder structure for the "pages" view:
 
 ```
 pages/
