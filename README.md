@@ -1,6 +1,6 @@
-# VanLife (van booking project )
+# VanLife
 
-A modern, responsive, and feature-rich booking project built with React. This project is meant to showcase the popular React Router library and to all of it's most popular use cases to provide an efficient and latest user experience.
+A modern, responsive, and feature-rich booking project built with React. This project is meant to showcase the popular React Router library and all of it's most popular use cases to provide an efficient and latest user experience.
 
 ## Table of Contents
 
