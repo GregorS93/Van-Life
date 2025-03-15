@@ -1,5 +1,7 @@
-export const setLoggedInLocal = () => localStorage.setItem("loggedin", true);
+export const loggedInCONST = "loggedin";
 
-export const getLoggedInLocal = () => localStorage.getItem("loggedin", true);
+export const setLoggedInLocal = () => localStorage.setItem(loggedInCONST, true);
 
-export const deleteLoggedInLocal = () => localStorage.removeItem("loggedin");
+export const getLoggedInLocal = () => localStorage.getItem(loggedInCONST, true);
+
+export const deleteLoggedInLocal = () => localStorage.removeItem(loggedInCONST);
