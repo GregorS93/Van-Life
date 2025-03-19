@@ -24,7 +24,7 @@ export default function HostVans() {
   }, []);
 
   const hostVansEls = hostVans.map((van) => (
-    <Link className="linksis" key={van.id} to={`hostVansPath{van.id}`}>
+    <Link className="linksis" key={van.id} to={hostVansPath(van.id)}>
       <div className="host-van-div">
         <img src={van.imageUrl} className="host-van-img" />
         <div className="host-van-detail">

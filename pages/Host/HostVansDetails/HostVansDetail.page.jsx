@@ -5,7 +5,7 @@ import { activeStyles } from "../../../consts/toConsts";
 
 export default function HostVanDetail() {
   const { id } = useParams();
-  const [listedVan, setListedVan] = useState({});
+  const [listedVan, setListedVan] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 

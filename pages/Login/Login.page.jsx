@@ -4,12 +4,17 @@ import { loginUser } from "../../apis/api";
 import { setLoggedInLocal } from "../../localStorage/handles.localStorage";
 
 export default function Login() {
+  const Status = {
+    Idle: "idle",
+    Submitting: "submitting",
+  };
+
   const [loginFormData, setLoginFormData] = useState({
     email: "",
     password: "",
   });
 
-  const [status, setStatus] = useState("idle");
+  const [status, setStatus] = useState(Status.Idle);
   const [error, setError] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
@@ -18,7 +23,7 @@ export default function Login() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    setStatus("submitting");
+    setStatus(Status.Submitting);
     try {
       const data = await loginUser(loginFormData);
       setError(null);
@@ -29,7 +34,7 @@ export default function Login() {
     } catch (err) {
       setError(err);
     } finally {
-      setStatus("idle");
+      setStatus(Status.Idle);
     }
   }
 
@@ -63,8 +68,8 @@ export default function Login() {
           placeholder="Password"
           value={loginFormData.password}
         />
-        <button disabled={status === "submitting"} className="login-btn">
-          {status === "submitting" ? "Logging in..." : "Log in"}
+        <button disabled={status === Status.Submitting} className="login-btn">
+          {status === Status.Submitting ? "Logging in..." : "Log in"}
         </button>
       </form>
     </div>
