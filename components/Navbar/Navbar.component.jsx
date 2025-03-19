@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import loginIcon from "../../assets/Login/login-icon.png";
 import siteLogo from "../../assets/Home/logo.png";
 import { activeStyles } from "../../consts/toConsts";
-import { deleteLoggedInLocal } from "../../localStorage/handles";
+import { deleteLoggedInLocal } from "../../localStorage/handles.localStorage";
 
 export default function Navbar({ loginData }) {
   return (

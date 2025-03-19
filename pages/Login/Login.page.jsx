@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { loginUser } from "../../apis/api";
-import { setLoggedInLocal } from "../../localStorage/handles";
+import { setLoggedInLocal } from "../../localStorage/handles.localStorage";
 
 export default function Login() {
   const [loginFormData, setLoginFormData] = useState({

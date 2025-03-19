@@ -1,6 +1,5 @@
-import React from "react";
 import { Outlet, Navigate, useLocation } from "react-router-dom";
-import { getLoggedInLocal } from "../../localStorage/handles";
+import { getLoggedInLocal } from "../../localStorage/handles.localStorage";
 
 export default function AuthRequired() {
   const isLoggedIn = getLoggedInLocal();

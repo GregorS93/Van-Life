@@ -1,0 +1,1 @@
+export const hostVansRoute = 'vans'

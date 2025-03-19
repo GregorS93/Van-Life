@@ -1,6 +1,6 @@
 {
   "name": "van-life",
-  "description": "A van renting project build on React Rouuter showcasing its most popular usecases.",
+  "description": "A van renting project build on React Router showcasing its most popular usecases.",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "eslint": "^9.22.0",
     "firebase": "^11.3.1",
     "miragejs": "^0.1.48",
     "react": "18.2.0",

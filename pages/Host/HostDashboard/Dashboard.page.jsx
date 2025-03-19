@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { getHostVans } from "../../../apis/api";
 import { BsStarFill } from "react-icons/bs";
 import { hostVansPath } from "../../../consts/toConsts";

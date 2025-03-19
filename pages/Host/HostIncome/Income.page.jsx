@@ -1,4 +1,3 @@
-import React from "react";
 import incomeGraph from "../../../assets/Host-Income/income-graph.png";
 
 export default function Income() {

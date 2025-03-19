@@ -1,0 +1,1 @@
+export const vanDetailRoute = ( id = ':id' ) => `vans/${id}`
