@@ -1,5 +1,8 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { activeStyles } from "../../consts/toConsts";
+import { incomeRoute } from "../../pages/Host/HostIncome/Income.route";
+import { hostVansRoute } from "../../pages/Host/HostVans/HostVans.route";
+import { reviewsRoute } from "../../pages/Host/HostReviews/Reviews.route";
 
 export default function HostLayout() {
   return (
@@ -15,7 +18,7 @@ export default function HostLayout() {
         </NavLink>
 
         <NavLink
-          to="income"
+          to={incomeRoute}
           className="host-nav-link"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
@@ -23,7 +26,7 @@ export default function HostLayout() {
         </NavLink>
 
         <NavLink
-          to="vans"
+          to={hostVansRoute}
           className="host-nav-link"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
@@ -31,7 +34,7 @@ export default function HostLayout() {
         </NavLink>
 
         <NavLink
-          to="reviews"
+          to={reviewsRoute}
           className="host-nav-link"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >

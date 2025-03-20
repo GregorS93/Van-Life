@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { loginUser } from "../../apis/api";
 import { setLoggedInLocal } from "../../localStorage/handles.localStorage";
+import { hostRoute } from "../Host/Host.route";
 
 export default function Login() {
   const Status = {
@@ -19,7 +20,7 @@ export default function Login() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const from = location.state?.from?.pathname || "/host";
+  const from = location.state?.from?.pathname || { hostRoute };
 
   async function handleSubmit(e) {
     e.preventDefault();

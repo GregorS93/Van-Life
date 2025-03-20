@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3em 2em;
-  height: 120px;
+  padding: 3rem 2rem;
+  height: 7.5rem;
 }
 
 .navbar-link {
   text-decoration: none;
   color: #4d4d4d;
-  margin-left: 1.7em;
+  margin-left: 1.7rem;
 }
 
 .navbar-link:hover,
@@ -21,8 +21,8 @@
 /* HOST NAV */
 
 .host-nav-link {
-  margin: 0 0.5em;
-  margin-left: 2em;
+  margin: 0 0.5rem;
+  margin-left: 2rem;
   text-decoration: none;
 }
 

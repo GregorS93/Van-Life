@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useParams, Link, Outlet, NavLink } from "react-router-dom";
 import { getVan } from "../../../apis/api";
 import { activeStyles } from "../../../consts/toConsts";
+import { pricingRoute } from "../HostVansPricing/HostVansPricing.route";
+import { photosRoute } from "../HostVansPhotos/HostVansPhotos.route";
 
 export default function HostVanDetail() {
   const { id } = useParams();
@@ -62,14 +64,14 @@ export default function HostVanDetail() {
             </NavLink>
             <NavLink
               className="host-van-detail-links"
-              to="pricing"
+              to={pricingRoute}
               style={({ isActive }) => (isActive ? activeStyles : null)}
             >
               Pricing
             </NavLink>
             <NavLink
               className="host-van-detail-links"
-              to="photos"
+              to={photosRoute}
               style={({ isActive }) => (isActive ? activeStyles : null)}
             >
               Photos

@@ -1,0 +1,110 @@
+/* HOST VANS DASHBOARD PAGE */
+
+.listed-vans-dashboard-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .view-all-host-link {
+    text-decoration: none;
+    padding-right: 2rem;
+    padding-top: 2.8rem;
+  }
+  
+  .review-section {
+    background: #ffddb2;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .review-section > div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .review-section > div > p {
+    font-size: 1.4rem;
+  }
+  
+  .review-section > div > p,
+  .review-section > div > h2 {
+    margin-block: 1.5rem;
+  }
+  
+  .review-section > div > p {
+    font-weight: 400;
+    color: #4d4d4d;
+  }
+  
+  .review-section > div > p > span {
+    font-weight: bold;
+    color: #161616;
+  }
+  
+  .details-link {
+    text-decoration: none;
+  }
+  
+  .details-link:hover,
+  .view-all-host-link:hover {
+    text-decoration: underline;
+  }
+  
+  .earnings-section {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    background: #ffead0;
+  }
+  
+  .earnings-section > div > h1,
+  .earnings-section > div > p,
+  .earnings-section > div > h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .earnings-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .earnings-section > div > h1 {
+    font-size: 2rem;
+  }
+  
+  .earnings-section > div > p {
+    color: #4d4d4d;
+    font-size: 1rem;
+  }
+  
+  .earnings-section > div > p > span {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .earnings-section > div > h2 {
+    font-size: 3rem;
+  }
+  
+  .star {
+    height: 1.6rem;
+    width: 1.7rem;
+    color: #ff8c38;
+    margin-right: -0.75rem;
+  }
+  
+  .dashboard-link {
+    text-decoration: none;
+  }
+  
+  .dashboard-link:hover {
+    text-decoration: underline;
+  }

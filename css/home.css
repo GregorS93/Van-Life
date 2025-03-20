@@ -1,18 +1,18 @@
 .hero-div {
   background: url("/assets/Home/hero-image.png") center / cover no-repeat;
   color: white;
-  height: 610px;
+  height: 38.2rem;
   text-align: left;
   font-size: 1.7rem;
-  padding: 1em;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3.5rem;
 }
 
 .hero-header {
   margin: 0;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .hero-p {
@@ -31,8 +31,8 @@
 .hero-div > button {
   background: #ff8c38;
   color: white;
-  height: 60px;
-  margin-top: 1em;
+  height: 3.75rem;
+  margin-top: 1.3rem;
   font-weight: 700;
   font-size: 1.3rem;
   border-radius: 8px;
@@ -47,10 +47,10 @@
 }
 
 .empty-local-storage {
-  margin-left: 1.5em;
+  margin-left: 1.5rem;
   border: none;
   cursor: pointer;
-  width: 2em;
+  width: 2rem;
   border-radius: 8px;
   background: #ff8c38;
   color: white;
